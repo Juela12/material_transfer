@@ -1,0 +1,103 @@
+<mvc:View
+    controllerName="materialtransfer.materialtransfer.controller.secondview"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:form="sap.ui.layout.form"
+    	xmlns:f="sap.ui.layout.form"
+>
+    <Shell id="shell">
+        <App id="secondview"
+        showNavButton="true"
+		        navButtonPress="onNavBack">
+            <pages>
+                <Page id="page2" title="{i18n>title}"
+                showNavButton="true"
+		        navButtonPress="onNavBack">
+                	<f:SimpleForm id="SimpleFormChange354wide"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Address"
+			labelSpanXL="4"
+			labelSpanL="3"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="4"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false">
+               
+                     <Label text="Destination material number " visible="{Fields>/Labelmaterial}" />
+                     <Input id="idDestination"   showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestMaterial" visible="{Fields>/material}"
+                       ></Input>
+                   
+                    <Label text="Plant" visible="{Fields>/Labelplant}" />
+                     <Input id="idPlant"   showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestPlant" visible="{Fields>/plant}"
+                       ></Input>
+
+                     <Label text="Description of destination material" visible="{Fields>/Labeldescmatnr}" />
+                     <Text id="getDescriptionofDestinationMaterial" visible="{Fields>/descmatnr}" />
+
+                     <Label text="Destination batch "  visible="{Fields>/Labeldestbatch}"/>
+                     <Input id="idDestinationBatch"  showSuggestion="true"
+			         showValueHelp="true" valueHelpRequest="onValueHelpRequestBatch"  visible="{Fields>/destbatch}" ></Input>
+     
+                     <Label text="Source Plant" visible="{Fields>/Labelsrcplant}"/>
+                     <Input id="idSource"   showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestPlant" visible="{Fields>/srcplant}" ></Input>
+              
+
+                     <Label text="Description of Source Plant" visible="{Fields>/LabeldestofsrcPlant}"/>
+                     <Text id="getDescriptionofSourcePlant" visible="{Fields>/destofsrcPlant}"/>
+
+    
+                     <Label text="Destination Plant"  visible="{Fields>/Labeldestplant}"/>
+                     <Input id="idDestinationPlant"   showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestPlant" visible="{Fields>/destplant}" ></Input>
+
+
+
+                     <Label text="Description of Destination Plant" visible="{Fields>/Labeldescofdestplant}"/>
+                     <Text id="getDescriptionofDestination" visible="{Fields>/descofdestplant}"/>
+
+                     <Label text="Source Storage Location " visible="{Fields>/Labelsrcstorlocation}"/>
+                     <Input id="idSourceStorageLocation"   showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestStorage" visible="{Fields>/srcstorlocation}" ></Input>
+
+
+                     <Label text="Description of Source Storage Location " visible="{Fields>/Labeldscsrcstorlocation}" />
+                     <Text id="getDescriptionofSource"  visible="{Fields>/dscsrcstorlocation}"/>
+
+
+                     <Label text="Destination Storage Location "   visible="{Fields>/Labeldeststorlocation}"/>
+                     <Input id="idDestinationStorageLocation"  showSuggestion="true"
+			          showValueHelp="true" valueHelpRequest="onValueHelpRequestStorage"  visible="{Fields>/deststorlocation}"></Input>
+ 
+
+                     <Label text="Description of Destination Storage Location" visible="{Fields>/Labeldestdscofstorlocationmaterial}" />
+                     <Text id="getDescriptionofDestinationStorage"  visible="{Fields>/destdscofstorlocationmaterial}"/>
+
+
+                   </f:SimpleForm>
+                
+                  	<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Save"  press="onSave" />
+				<Button text="Cancel" press="onClose" />
+				
+			</Toolbar>
+		</footer>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

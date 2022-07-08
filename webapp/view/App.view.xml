@@ -1,0 +1,81 @@
+
+<mvc:View
+    controllerName="materialtransfer.materialtransfer.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                <content>
+                   <List 
+                  	headerText="Numbers">
+                <ObjectListItem
+				title="313"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="315"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="311"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="301"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="309"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="321"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="322"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="325"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="343"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+
+                <ObjectListItem
+				title="344"
+				type="Active"
+				press="onSecondview">
+		       </ObjectListItem>
+                      </List>
+    
+            </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
